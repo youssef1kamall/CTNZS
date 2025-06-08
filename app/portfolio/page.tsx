@@ -123,7 +123,7 @@ export default function PortfolioPage() {
               <img
                 src="/images/ctzns-logo.png"
                 alt="CTZNS - Citizens of the Internet"
-                className="h-8 sm:h-10 md:h-12 w-auto"
+                className="h-[60px] w-[100px] md:h-[78px] md:w-[129px] lg:h-[91px] lg:w-[151px] object-contain"
               />
             </Link>
 
@@ -131,31 +131,31 @@ export default function PortfolioPage() {
             <div className="hidden md:flex items-center space-x-8">
               <Link
                 href="/about"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 About
               </Link>
               <Link
                 href="/services"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Services
               </Link>
               <Link
                 href="/portfolio"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Portfolio
               </Link>
               <Link
                 href="/podcast"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Podcast
               </Link>
               <Link
                 href="/products"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Products
               </Link>
@@ -180,9 +180,8 @@ export default function PortfolioPage() {
 
           {/* Mobile Navigation */}
           <div
-            className={`md:hidden border-t border-gray-100 bg-white transition-all duration-300 ease-in-out overflow-hidden ${
-              mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-            }`}
+            className={`md:hidden border-t border-gray-100 bg-white transition-all duration-300 ease-in-out overflow-hidden ${mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+              }`}
           >
             <div className="px-4 py-6 space-y-4">
               <Link
@@ -236,14 +235,12 @@ export default function PortfolioPage() {
         {/* Background Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className={`absolute top-20 right-16 w-32 h-32 bg-green-500/5 rounded-full transition-all duration-1000 ${
-              isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-            }`}
+            className={`absolute top-20 right-16 w-32 h-32 bg-green-500/5 rounded-full transition-all duration-1000 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
           ></div>
           <div
-            className={`absolute bottom-20 left-16 w-24 h-24 bg-red-500/5 rounded-full transition-all duration-1000 delay-300 ${
-              isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-            }`}
+            className={`absolute bottom-20 left-16 w-24 h-24 bg-red-500/5 rounded-full transition-all duration-1000 delay-300 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
           ></div>
         </div>
 
@@ -251,9 +248,8 @@ export default function PortfolioPage() {
           <div className="text-center space-y-8 sm:space-y-12">
             <div className="space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-12 h-0.5 bg-black"></div>
                 <span className="text-sm font-light tracking-widest uppercase text-gray-600">Our Work</span>
@@ -261,25 +257,22 @@ export default function PortfolioPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter text-black leading-none">
                   PORTFOLIO
                   <span className="block text-green-500 relative">SHOWCASE</span>
                 </h1>
                 <div
-                  className={`w-24 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-24 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
               </div>
 
               <div
-                className={`transition-all duration-700 delay-400 ${
-                  isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-400 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <p className="text-lg sm:text-xl font-light text-gray-700 max-w-3xl mx-auto leading-relaxed">
                   A showcase of our best work, highlighting our creativity, expertise, and commitment to excellence.
@@ -297,9 +290,8 @@ export default function PortfolioPage() {
           <div className="space-y-8 sm:space-y-16">
             <div className="text-center space-y-4 sm:space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isLookbooksVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isLookbooksVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-8 sm:w-12 h-0.5 bg-black"></div>
                 <span className="text-xs sm:text-sm font-light tracking-widest uppercase text-gray-600">Lookbooks</span>
@@ -307,18 +299,16 @@ export default function PortfolioPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isLookbooksVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isLookbooksVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter text-black">
                   Explore Our
                   <span className="text-green-500"> Collections</span>
                 </h2>
                 <div
-                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isLookbooksVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isLookbooksVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
               </div>
             </div>
@@ -327,9 +317,8 @@ export default function PortfolioPage() {
               {lookbooks.map((lookbook, index) => (
                 <div
                   key={index}
-                  className={`transition-all duration-700 ${
-                    isLookbooksVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-                  }`}
+                  className={`transition-all duration-700 ${isLookbooksVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                    }`}
                   style={{ transitionDelay: `${400 + index * 150}ms` }}
                 >
                   <Link
@@ -366,9 +355,8 @@ export default function PortfolioPage() {
           <div className="space-y-8 sm:space-y-16">
             <div className="text-center space-y-4 sm:space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isPastShootsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isPastShootsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-8 sm:w-12 h-0.5 bg-black"></div>
                 <span className="text-xs sm:text-sm font-light tracking-widest uppercase text-gray-600">
@@ -378,18 +366,16 @@ export default function PortfolioPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isPastShootsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isPastShootsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter text-black">
                   Behind the
                   <span className="text-green-500"> Lens</span>
                 </h2>
                 <div
-                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isPastShootsVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isPastShootsVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
               </div>
             </div>
@@ -398,9 +384,8 @@ export default function PortfolioPage() {
               {pastShoots.map((shoot, index) => (
                 <div
                   key={index}
-                  className={`transition-all duration-700 ${
-                    isPastShootsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-                  }`}
+                  className={`transition-all duration-700 ${isPastShootsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                    }`}
                   style={{ transitionDelay: `${400 + index * 150}ms` }}
                 >
                   <Link
@@ -437,9 +422,8 @@ export default function PortfolioPage() {
           <div className="space-y-8 sm:space-y-16">
             <div className="text-center space-y-4 sm:space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isPastWorkVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isPastWorkVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-8 sm:w-12 h-0.5 bg-black"></div>
                 <span className="text-xs sm:text-sm font-light tracking-widest uppercase text-gray-600">Past Work</span>
@@ -447,18 +431,16 @@ export default function PortfolioPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isPastWorkVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isPastWorkVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter text-black">
                   Our
                   <span className="text-green-500"> Creations</span>
                 </h2>
                 <div
-                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isPastWorkVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isPastWorkVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
               </div>
             </div>
@@ -467,9 +449,8 @@ export default function PortfolioPage() {
               {pastWork.map((work, index) => (
                 <div
                   key={index}
-                  className={`transition-all duration-700 ${
-                    isPastWorkVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-                  }`}
+                  className={`transition-all duration-700 ${isPastWorkVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                    }`}
                   style={{ transitionDelay: `${400 + index * 150}ms` }}
                 >
                   <Link
@@ -613,7 +594,7 @@ export default function PortfolioPage() {
               <img
                 src="/images/ctzns-logo.png"
                 alt="CTZNS - Citizens of the Internet"
-                className="h-8 sm:h-10 md:h-12 w-auto mx-auto md:mx-0"
+                className="h-[60px] w-[100px] md:h-[78px] md:w-[129px] lg:h-[91px] lg:w-[151px] object-contain mx-auto md:mx-0"
               />
             </Link>
 

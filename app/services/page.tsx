@@ -206,13 +206,10 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 sm:h-20">
             <Link href="/" className="flex items-center">
-              <Image
+              <img
                 src="/images/ctzns-logo.png"
-                alt="CTZNS Logo"
-                width={200}
-                height={48}
-                className="h-8 sm:h-10 md:h-12 w-auto"
-                priority
+                alt="CTZNS - Citizens of the Internet"
+                className="h-[60px] w-[100px] md:h-[78px] md:w-[129px] lg:h-[91px] lg:w-[151px] object-contain"
               />
             </Link>
 
@@ -220,31 +217,31 @@ export default function ServicesPage() {
             <div className="hidden md:flex items-center space-x-8">
               <Link
                 href="/about"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 About
               </Link>
               <Link
                 href="/services"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Services
               </Link>
               <Link
                 href="/portfolio"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Portfolio
               </Link>
               <Link
                 href="/podcast"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Podcast
               </Link>
               <Link
                 href="/products"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Products
               </Link>
@@ -269,43 +266,42 @@ export default function ServicesPage() {
 
           {/* Mobile Navigation */}
           <div
-            className={`md:hidden border-t border-gray-100 bg-white transition-all duration-300 ease-in-out overflow-hidden ${
-              mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-            }`}
+            className={`md:hidden border-t border-gray-100 bg-white transition-all duration-300 ease-in-out overflow-hidden ${mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+              }`}
           >
             <div className="px-4 py-6 space-y-4">
               <Link
                 href="/about"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase w-full text-left"
+                className="block text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase w-full text-left"
               >
                 About
               </Link>
               <Link
                 href="/services"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase w-full text-left"
+                className="block text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase w-full text-left"
               >
                 Services
               </Link>
               <Link
                 href="/portfolio"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase w-full text-left"
+                className="block text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase w-full text-left"
               >
                 Portfolio
               </Link>
               <Link
                 href="/podcast"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase w-full text-left"
+                className="block text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase w-full text-left"
               >
                 Podcast
               </Link>
               <Link
                 href="/products"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase w-full text-left"
+                className="block text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase w-full text-left"
               >
                 Products
               </Link>
@@ -325,14 +321,12 @@ export default function ServicesPage() {
         {/* Background Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className={`absolute top-20 right-16 w-32 h-32 bg-green-500/5 rounded-full transition-all duration-1000 ${
-              isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-            }`}
+            className={`absolute top-20 right-16 w-32 h-32 bg-green-500/5 rounded-full transition-all duration-1000 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
           ></div>
           <div
-            className={`absolute bottom-20 left-16 w-24 h-24 bg-red-500/5 rounded-full transition-all duration-1000 delay-300 ${
-              isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-            }`}
+            className={`absolute bottom-20 left-16 w-24 h-24 bg-red-500/5 rounded-full transition-all duration-1000 delay-300 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
           ></div>
         </div>
 
@@ -340,9 +334,8 @@ export default function ServicesPage() {
           <div className="text-center space-y-8 sm:space-y-12">
             <div className="space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-12 h-0.5 bg-black"></div>
                 <span className="text-sm font-light tracking-widest uppercase text-gray-600">Productized Services</span>
@@ -350,25 +343,22 @@ export default function ServicesPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter text-black leading-none">
                   CITIZENS OF THE
                   <span className="block text-green-500 relative">INTERNET</span>
                 </h1>
                 <div
-                  className={`w-24 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-24 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
               </div>
 
               <div
-                className={`transition-all duration-700 delay-400 ${
-                  isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-400 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <p className="text-lg sm:text-xl font-light text-gray-700 max-w-4xl mx-auto leading-relaxed">
                   Houston-based studio helping small businesses and solo entrepreneurs stand out with clean design,
@@ -379,9 +369,8 @@ export default function ServicesPage() {
 
             {/* Value Props */}
             <div
-              className={`grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-4xl mx-auto transition-all duration-700 delay-600 ${
-                isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
+              className={`grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-4xl mx-auto transition-all duration-700 delay-600 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                }`}
             >
               {[
                 { icon: <DollarSign className="h-5 w-5" />, text: "Predictable pricing", accent: "green" },
@@ -391,9 +380,8 @@ export default function ServicesPage() {
               ].map((prop, index) => (
                 <div key={index} className="text-center space-y-3 group">
                   <div
-                    className={`w-12 h-12 mx-auto rounded-sm flex items-center justify-center transition-all duration-300 group-hover:scale-110 ${
-                      prop.accent === "green" ? "bg-green-500" : prop.accent === "red" ? "bg-red-500" : "bg-yellow-400"
-                    }`}
+                    className={`w-12 h-12 mx-auto rounded-sm flex items-center justify-center transition-all duration-300 group-hover:scale-110 ${prop.accent === "green" ? "bg-green-500" : prop.accent === "red" ? "bg-red-500" : "bg-yellow-400"
+                      }`}
                   >
                     <div className={prop.accent === "yellow" ? "text-black" : "text-white"}>{prop.icon}</div>
                   </div>
@@ -403,9 +391,8 @@ export default function ServicesPage() {
             </div>
 
             <div
-              className={`transition-all duration-700 delay-800 ${
-                isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
+              className={`transition-all duration-700 delay-800 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                }`}
             >
               <p className="text-base font-light text-gray-600 max-w-2xl mx-auto">
                 Perfect for startups, creators, consultants, and brands who need quality creative fast.
@@ -421,9 +408,8 @@ export default function ServicesPage() {
           <div className="space-y-12 sm:space-y-16">
             <div className="text-center space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isServicesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isServicesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-12 h-0.5 bg-black"></div>
                 <span className="text-sm font-light tracking-wide uppercase text-gray-600">Services</span>
@@ -431,18 +417,16 @@ export default function ServicesPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isServicesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isServicesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter text-black">
                   Choose Your
                   <span className="text-green-500"> Package</span>
                 </h2>
                 <div
-                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isServicesVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isServicesVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
               </div>
             </div>
@@ -451,9 +435,8 @@ export default function ServicesPage() {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className={`transition-all duration-700 ${
-                    isServicesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-                  }`}
+                  className={`transition-all duration-700 ${isServicesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                    }`}
                   style={{ transitionDelay: `${400 + index * 200}ms` }}
                 >
                   <Card className="border-0 shadow-none bg-gray-50/50 hover:shadow-lg transition-all duration-300 group relative overflow-hidden h-full">
@@ -461,9 +444,8 @@ export default function ServicesPage() {
                     {(service.popular || service.isNew) && (
                       <div className="absolute top-4 right-4 z-10">
                         <Badge
-                          className={`${
-                            service.popular ? "bg-green-500 text-white" : "bg-yellow-400 text-black"
-                          } font-light tracking-wide`}
+                          className={`${service.popular ? "bg-green-500 text-white" : "bg-yellow-400 text-black"
+                            } font-light tracking-wide`}
                         >
                           {service.popular ? "Popular" : "New"}
                         </Badge>
@@ -472,26 +454,24 @@ export default function ServicesPage() {
 
                     {/* Floating accent elements */}
                     <div
-                      className={`absolute top-6 left-6 w-3 h-3 rounded-full transition-all duration-500 group-hover:scale-125 ${
-                        service.accent === "green"
-                          ? "bg-green-500"
-                          : service.accent === "red"
-                            ? "bg-red-500"
-                            : "bg-yellow-400"
-                      }`}
+                      className={`absolute top-6 left-6 w-3 h-3 rounded-full transition-all duration-500 group-hover:scale-125 ${service.accent === "green"
+                        ? "bg-green-500"
+                        : service.accent === "red"
+                          ? "bg-red-500"
+                          : "bg-yellow-400"
+                        }`}
                     ></div>
 
                     <CardContent className="p-8 space-y-6 relative">
                       {/* Service Icon & Title */}
                       <div className="space-y-4">
                         <div
-                          className={`w-16 h-16 rounded-sm flex items-center justify-center transition-all duration-300 group-hover:scale-110 ${
-                            service.accent === "green"
-                              ? "bg-green-500"
-                              : service.accent === "red"
-                                ? "bg-red-500"
-                                : "bg-yellow-400"
-                          }`}
+                          className={`w-16 h-16 rounded-sm flex items-center justify-center transition-all duration-300 group-hover:scale-110 ${service.accent === "green"
+                            ? "bg-green-500"
+                            : service.accent === "red"
+                              ? "bg-red-500"
+                              : "bg-yellow-400"
+                            }`}
                         >
                           {service.icon}
                         </div>
@@ -562,9 +542,8 @@ export default function ServicesPage() {
           <div className="space-y-12">
             <div className="text-center space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isAddOnsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isAddOnsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-12 h-0.5 bg-black"></div>
                 <span className="text-sm font-light tracking-widest uppercase text-gray-600">Add-Ons</span>
@@ -572,18 +551,16 @@ export default function ServicesPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isAddOnsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isAddOnsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter text-black">
                   Amplify Your
                   <span className="text-green-500"> Impact</span>
                 </h2>
                 <div
-                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isAddOnsVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isAddOnsVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
                 <p className="text-lg font-light text-gray-700 max-w-2xl mx-auto mt-4">
                   Extend your digital strategy with thoughtful additional services.
@@ -592,9 +569,8 @@ export default function ServicesPage() {
             </div>
 
             <div
-              className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-700 delay-400 ${
-                isAddOnsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
+              className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-700 delay-400 ${isAddOnsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                }`}
             >
               {addOns.map((addon, index) => (
                 <div
@@ -631,9 +607,8 @@ export default function ServicesPage() {
           <div className="space-y-12 sm:space-y-16">
             <div className="text-center space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isProcessVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isProcessVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-12 h-0.5 bg-black"></div>
                 <span className="text-sm font-light tracking-widest uppercase text-gray-600">Process</span>
@@ -641,18 +616,16 @@ export default function ServicesPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isProcessVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isProcessVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter text-black">
                   How It
                   <span className="text-green-500"> Works</span>
                 </h2>
                 <div
-                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isProcessVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isProcessVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
                 <p className="text-lg font-light text-gray-700 max-w-2xl mx-auto mt-4">
                   Simple. Fast. Designed to grow with you.
@@ -665,43 +638,39 @@ export default function ServicesPage() {
               <div className="relative">
                 {/* Connecting Line */}
                 <div
-                  className={`absolute left-8 top-8 bottom-8 w-0.5 bg-gray-300 transition-all duration-1000 delay-600 ${
-                    isProcessVisible ? "opacity-100" : "opacity-0"
-                  }`}
+                  className={`absolute left-8 top-8 bottom-8 w-0.5 bg-gray-300 transition-all duration-1000 delay-600 ${isProcessVisible ? "opacity-100" : "opacity-0"
+                    }`}
                 ></div>
 
                 <div className="space-y-12">
                   {processSteps.map((step, index) => (
                     <div
                       key={index}
-                      className={`relative flex items-start space-x-8 transition-all duration-700 ${
-                        isProcessVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
-                      }`}
+                      className={`relative flex items-start space-x-8 transition-all duration-700 ${isProcessVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
+                        }`}
                       style={{ transitionDelay: `${400 + index * 200}ms` }}
                     >
                       {/* Step Circle */}
                       <div className="relative flex-shrink-0">
                         <div
-                          className={`w-16 h-16 rounded-full flex items-center justify-center text-white font-black text-lg shadow-lg transition-all duration-300 hover:scale-110 ${
-                            step.accent === "green"
-                              ? "bg-green-500"
-                              : step.accent === "red"
-                                ? "bg-red-500"
-                                : "bg-yellow-400 text-black"
-                          }`}
+                          className={`w-16 h-16 rounded-full flex items-center justify-center text-white font-black text-lg shadow-lg transition-all duration-300 hover:scale-110 ${step.accent === "green"
+                            ? "bg-green-500"
+                            : step.accent === "red"
+                              ? "bg-red-500"
+                              : "bg-yellow-400 text-black"
+                            }`}
                         >
                           {step.step}
                         </div>
 
                         {/* Pulse effect */}
                         <div
-                          className={`absolute inset-0 rounded-full animate-ping opacity-20 ${
-                            step.accent === "green"
-                              ? "bg-green-500"
-                              : step.accent === "red"
-                                ? "bg-red-500"
-                                : "bg-yellow-400"
-                          }`}
+                          className={`absolute inset-0 rounded-full animate-ping opacity-20 ${step.accent === "green"
+                            ? "bg-green-500"
+                            : step.accent === "red"
+                              ? "bg-red-500"
+                              : "bg-yellow-400"
+                            }`}
                           style={{ animationDelay: `${index * 0.5}s`, animationDuration: "2s" }}
                         ></div>
                       </div>
@@ -718,13 +687,12 @@ export default function ServicesPage() {
 
                           {/* Accent line under text */}
                           <div
-                            className={`w-12 h-1 rounded-full transition-all duration-500 ${
-                              step.accent === "green"
-                                ? "bg-green-500/30"
-                                : step.accent === "red"
-                                  ? "bg-red-500/30"
-                                  : "bg-yellow-400/30"
-                            }`}
+                            className={`w-12 h-1 rounded-full transition-all duration-500 ${step.accent === "green"
+                              ? "bg-green-500/30"
+                              : step.accent === "red"
+                                ? "bg-red-500/30"
+                                : "bg-yellow-400/30"
+                              }`}
                           ></div>
                         </div>
                       </div>
@@ -847,12 +815,10 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 sm:space-y-6 md:space-y-0">
             <Link href="/" className="text-center md:text-left">
-              <Image
+              <img
                 src="/images/ctzns-logo.png"
-                alt="CTZNS Logo"
-                width={160}
-                height={40}
-                className="h-8 sm:h-10 w-auto"
+                alt="CTZNS - Citizens of the Internet"
+                className="h-[60px] w-[100px] md:h-[78px] md:w-[129px] lg:h-[91px] lg:w-[151px] object-contain mx-auto md:mx-0"
               />
             </Link>
 

@@ -139,7 +139,7 @@ export default function ProductsPage() {
               <img
                 src="/images/ctzns-logo.png"
                 alt="CTZNS - Citizens of the Internet"
-                className="h-8 sm:h-10 md:h-12 w-auto"
+                className="h-[60px] w-[100px] md:h-[78px] md:w-[129px] lg:h-[91px] lg:w-[151px] object-contain"
               />
             </Link>
 
@@ -147,31 +147,31 @@ export default function ProductsPage() {
             <div className="hidden md:flex items-center space-x-8">
               <Link
                 href="/about"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 About
               </Link>
               <Link
                 href="/services"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Services
               </Link>
               <Link
                 href="/portfolio"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Portfolio
               </Link>
               <Link
                 href="/podcast"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Podcast
               </Link>
               <Link
                 href="/products"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Products
               </Link>
@@ -197,15 +197,14 @@ export default function ProductsPage() {
 
           {/* Mobile Navigation */}
           <div
-            className={`md:hidden border-t border-gray-100 bg-white transition-all duration-300 ease-in-out overflow-hidden ${
-              mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-            }`}
+            className={`md:hidden border-t border-gray-100 bg-white transition-all duration-300 ease-in-out overflow-hidden ${mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+              }`}
           >
             <div className="px-4 py-6 space-y-4">
               <Link
                 href="/about"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase w-full text-left"
+                className="block text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase w-full text-left"
               >
                 About
               </Link>
@@ -254,14 +253,12 @@ export default function ProductsPage() {
         {/* Background Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className={`absolute top-20 right-16 w-32 h-32 bg-green-500/5 rounded-full transition-all duration-1000 ${
-              isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-            }`}
+            className={`absolute top-20 right-16 w-32 h-32 bg-green-500/5 rounded-full transition-all duration-1000 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
           ></div>
           <div
-            className={`absolute bottom-20 left-16 w-24 h-24 bg-red-500/5 rounded-full transition-all duration-1000 delay-300 ${
-              isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-            }`}
+            className={`absolute bottom-20 left-16 w-24 h-24 bg-red-500/5 rounded-full transition-all duration-1000 delay-300 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
           ></div>
         </div>
 
@@ -271,18 +268,16 @@ export default function ProductsPage() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <div
-                  className={`flex items-center space-x-3 transition-all duration-700 ${
-                    isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                  }`}
+                  className={`flex items-center space-x-3 transition-all duration-700 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                    }`}
                 >
                   <div className="w-12 h-0.5 bg-black"></div>
                   <span className="text-sm font-light tracking-widest uppercase text-gray-600">Merchandise</span>
                 </div>
 
                 <div
-                  className={`transition-all duration-700 delay-200 ${
-                    isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
+                  className={`transition-all duration-700 delay-200 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                    }`}
                 >
                   <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter text-black leading-none">
                     CTZNS
@@ -290,23 +285,20 @@ export default function ProductsPage() {
                       MERCH
                       {/* Animated underline */}
                       <div
-                        className={`absolute bottom-0 left-0 h-1 bg-green-500/20 transition-all duration-1000 delay-700 ${
-                          isHeroVisible ? "w-full" : "w-0"
-                        }`}
+                        className={`absolute bottom-0 left-0 h-1 bg-green-500/20 transition-all duration-1000 delay-700 ${isHeroVisible ? "w-full" : "w-0"
+                          }`}
                       ></div>
                     </span>
                   </h1>
                 </div>
                 <div
-                  className={`w-16 h-1 bg-green-500 transition-all duration-1000 delay-700 ${
-                    isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 transition-all duration-1000 delay-700 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
 
                 <div
-                  className={`transition-all duration-700 delay-400 ${
-                    isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
+                  className={`transition-all duration-700 delay-400 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                    }`}
                 >
                   <p className="text-lg sm:text-xl font-light text-gray-700 leading-relaxed">
                     Wear your digital citizenship with pride. Our exclusive merchandise represents the Citizens of the
@@ -316,9 +308,8 @@ export default function ProductsPage() {
               </div>
 
               <div
-                className={`flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-600 ${
-                  isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-600 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <Button
                   size="lg"
@@ -345,9 +336,8 @@ export default function ProductsPage() {
 
               {/* Product Features */}
               <div
-                className={`grid grid-cols-3 gap-6 pt-8 transition-all duration-700 delay-800 ${
-                  isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`grid grid-cols-3 gap-6 pt-8 transition-all duration-700 delay-800 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <div className="text-center space-y-2">
                   <div className="w-10 h-10 bg-green-500 rounded-sm flex items-center justify-center mx-auto">
@@ -372,9 +362,8 @@ export default function ProductsPage() {
 
             {/* Right Side - Featured Product */}
             <div
-              className={`transition-all duration-1000 ${
-                isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-75"
-              }`}
+              className={`transition-all duration-1000 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-75"
+                }`}
             >
               <div className="aspect-[4/5] bg-gray-50/50 rounded-sm relative overflow-hidden border border-gray-100">
                 <img
@@ -406,9 +395,8 @@ export default function ProductsPage() {
           <div className="space-y-12 sm:space-y-16">
             <div className="text-center space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isProductsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isProductsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-12 h-0.5 bg-black"></div>
                 <span className="text-sm font-light tracking-widest uppercase text-gray-600">Shop</span>
@@ -416,18 +404,16 @@ export default function ProductsPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isProductsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isProductsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter text-black">
                   Our
                   <span className="text-green-500"> Collection</span>
                 </h2>
                 <div
-                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isProductsVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isProductsVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
                 <p className="text-lg font-light text-gray-700 max-w-2xl mx-auto mt-4">
                   Express your digital citizenship with our exclusive merchandise collection.
@@ -439,18 +425,16 @@ export default function ProductsPage() {
               {products.map((product, index) => (
                 <div
                   key={index}
-                  className={`transition-all duration-700 ${
-                    isProductsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-                  }`}
+                  className={`transition-all duration-700 ${isProductsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                    }`}
                   style={{ transitionDelay: `${400 + index * 150}ms` }}
                 >
                   <Card className="border-0 shadow-none bg-gray-50/50 hover:shadow-lg transition-all duration-300 group relative overflow-hidden">
                     {(product.isNew || product.isBestseller) && (
                       <div className="absolute top-4 right-4 z-10">
                         <Badge
-                          className={`${
-                            product.isNew ? "bg-green-500 text-white" : "bg-yellow-400 text-black"
-                          } font-light`}
+                          className={`${product.isNew ? "bg-green-500 text-white" : "bg-yellow-400 text-black"
+                            } font-light`}
                         >
                           {product.isNew ? "New" : "Bestseller"}
                         </Badge>
@@ -459,13 +443,12 @@ export default function ProductsPage() {
 
                     {/* Floating accent elements */}
                     <div
-                      className={`absolute top-4 left-4 w-3 h-3 rounded-full transition-all duration-500 group-hover:scale-125 ${
-                        product.accent === "green"
-                          ? "bg-green-500"
-                          : product.accent === "red"
-                            ? "bg-red-500"
-                            : "bg-yellow-400"
-                      }`}
+                      className={`absolute top-4 left-4 w-3 h-3 rounded-full transition-all duration-500 group-hover:scale-125 ${product.accent === "green"
+                        ? "bg-green-500"
+                        : product.accent === "red"
+                          ? "bg-red-500"
+                          : "bg-yellow-400"
+                        }`}
                     ></div>
 
                     <CardContent className="p-0 relative">
@@ -510,13 +493,12 @@ export default function ProductsPage() {
 
                           {/* Add to Cart Button */}
                           <Button
-                            className={`w-full text-white font-light tracking-wide group-hover:scale-105 transition-all duration-300 ${
-                              product.accent === "green"
-                                ? "bg-green-500 hover:bg-green-600"
-                                : product.accent === "red"
-                                  ? "bg-red-500 hover:bg-red-600"
-                                  : "bg-yellow-400 hover:bg-yellow-500 text-black"
-                            }`}
+                            className={`w-full text-white font-light tracking-wide group-hover:scale-105 transition-all duration-300 ${product.accent === "green"
+                              ? "bg-green-500 hover:bg-green-600"
+                              : product.accent === "red"
+                                ? "bg-red-500 hover:bg-red-600"
+                                : "bg-yellow-400 hover:bg-yellow-500 text-black"
+                              }`}
                           >
                             <ShoppingBag className="mr-2 h-4 w-4" />
                             Add to Cart
@@ -538,9 +520,8 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left Side - Image */}
             <div
-              className={`transition-all duration-1000 ${
-                isContactVisible ? "opacity-100 scale-100" : "opacity-0 scale-75"
-              }`}
+              className={`transition-all duration-1000 ${isContactVisible ? "opacity-100 scale-100" : "opacity-0 scale-75"
+                }`}
             >
               <div className="aspect-square bg-white rounded-sm relative overflow-hidden border border-gray-100">
                 <img
@@ -565,18 +546,16 @@ export default function ProductsPage() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <div
-                  className={`flex items-center space-x-3 transition-all duration-700 ${
-                    isContactVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                  }`}
+                  className={`flex items-center space-x-3 transition-all duration-700 ${isContactVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                    }`}
                 >
                   <div className="w-12 h-0.5 bg-black"></div>
                   <span className="text-sm font-light tracking-widest uppercase text-gray-600">Custom Orders</span>
                 </div>
 
                 <div
-                  className={`transition-all duration-700 delay-200 ${
-                    isContactVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
+                  className={`transition-all duration-700 delay-200 ${isContactVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                    }`}
                 >
                   <h2 className="text-3xl sm:text-4xl font-black tracking-tighter text-black">
                     Need Custom
@@ -585,23 +564,20 @@ export default function ProductsPage() {
                       Merchandise?
                       {/* Animated underline */}
                       <div
-                        className={`absolute bottom-0 left-0 h-1 bg-green-500/20 transition-all duration-1000 delay-700 ${
-                          isContactVisible ? "w-full" : "w-0"
-                        }`}
+                        className={`absolute bottom-0 left-0 h-1 bg-green-500/20 transition-all duration-1000 delay-700 ${isContactVisible ? "w-full" : "w-0"
+                          }`}
                       ></div>
                     </span>
                   </h2>
                 </div>
                 <div
-                  className={`w-16 h-1 bg-green-500 transition-all duration-1000 delay-700 ${
-                    isContactVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 transition-all duration-1000 delay-700 ${isContactVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
 
                 <div
-                  className={`transition-all duration-700 delay-400 ${
-                    isContactVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
+                  className={`transition-all duration-700 delay-400 ${isContactVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                    }`}
                 >
                   <p className="text-base font-light text-gray-700 leading-relaxed">
                     Looking for custom merchandise for your brand, event, or organization? We offer bulk orders and
@@ -611,9 +587,8 @@ export default function ProductsPage() {
               </div>
 
               <div
-                className={`space-y-6 transition-all duration-700 delay-600 ${
-                  isContactVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`space-y-6 transition-all duration-700 delay-600 ${isContactVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
@@ -767,7 +742,7 @@ export default function ProductsPage() {
               <img
                 src="/images/ctzns-logo.png"
                 alt="CTZNS - Citizens of the Internet"
-                className="h-8 sm:h-10 md:h-12 w-auto mx-auto md:mx-0"
+                className="h-[60px] w-[100px] md:h-[78px] md:w-[129px] lg:h-[91px] lg:w-[151px] object-contain mx-auto md:mx-0"
               />
             </Link>
 

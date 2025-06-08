@@ -167,9 +167,9 @@ export default function AboutPage() {
               <Image
                 src="/images/ctzns-logo.png"
                 alt="CTZNS - Citizens of the Internet"
-                width={200}
-                height={48}
-                className="h-8 sm:h-10 md:h-12 w-auto"
+                width={151}
+                height={91}
+                className="h-[60px] w-[100px] md:h-[78px] md:w-[129px] lg:h-[91px] lg:w-[151px] object-contain"
                 priority
               />
             </Link>
@@ -178,31 +178,31 @@ export default function AboutPage() {
             <div className="hidden md:flex items-center space-x-8">
               <Link
                 href="/about"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 About
               </Link>
               <Link
                 href="/services"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Services
               </Link>
               <Link
                 href="/portfolio"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Portfolio
               </Link>
               <Link
                 href="/podcast"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Podcast
               </Link>
               <Link
                 href="/products"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Products
               </Link>
@@ -227,9 +227,8 @@ export default function AboutPage() {
 
           {/* Mobile Navigation */}
           <div
-            className={`md:hidden border-t border-gray-100 bg-white transition-all duration-300 ease-in-out overflow-hidden ${
-              mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-            }`}
+            className={`md:hidden border-t border-gray-100 bg-white transition-all duration-300 ease-in-out overflow-hidden ${mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+              }`}
           >
             <div className="px-4 py-6 space-y-4">
               <Link
@@ -283,14 +282,12 @@ export default function AboutPage() {
         {/* Background Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className={`absolute top-20 right-16 w-32 h-32 bg-green-500/5 rounded-full transition-all duration-1000 ${
-              isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-            }`}
+            className={`absolute top-20 right-16 w-32 h-32 bg-green-500/5 rounded-full transition-all duration-1000 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
           ></div>
           <div
-            className={`absolute bottom-20 left-16 w-24 h-24 bg-red-500/5 rounded-full transition-all duration-1000 delay-300 ${
-              isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-            }`}
+            className={`absolute bottom-20 left-16 w-24 h-24 bg-red-500/5 rounded-full transition-all duration-1000 delay-300 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
           ></div>
         </div>
 
@@ -298,9 +295,8 @@ export default function AboutPage() {
           <div className="text-center space-y-8 sm:space-y-12">
             <div className="space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-12 h-0.5 bg-black"></div>
                 <span className="text-sm font-light tracking-widest uppercase text-gray-600">About Us</span>
@@ -308,25 +304,22 @@ export default function AboutPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter text-black leading-none">
                   CITIZENS OF THE
                   <span className="block text-green-500 relative">INTERNET</span>
                 </h1>
                 <div
-                  className={`w-24 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-24 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
               </div>
 
               <div
-                className={`transition-all duration-700 delay-400 ${
-                  isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-400 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <p className="text-lg sm:text-xl font-light text-gray-700 max-w-4xl mx-auto leading-relaxed">
                   A diverse creative studio made up of young adults, all connected through the internet and united by
@@ -337,9 +330,8 @@ export default function AboutPage() {
 
             {/* Mission Values */}
             <div
-              className={`grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto transition-all duration-700 delay-600 ${
-                isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
+              className={`grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto transition-all duration-700 delay-600 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                }`}
             >
               {[
                 { icon: <Zap className="h-5 w-5" />, text: "Push Boundaries", accent: "green" },
@@ -348,13 +340,12 @@ export default function AboutPage() {
               ].map((value, index) => (
                 <div key={index} className="text-center space-y-3 group">
                   <div
-                    className={`w-12 h-12 mx-auto rounded-sm flex items-center justify-center transition-all duration-300 group-hover:scale-110 ${
-                      value.accent === "green"
-                        ? "bg-green-500"
-                        : value.accent === "red"
-                          ? "bg-red-500"
-                          : "bg-yellow-400"
-                    }`}
+                    className={`w-12 h-12 mx-auto rounded-sm flex items-center justify-center transition-all duration-300 group-hover:scale-110 ${value.accent === "green"
+                      ? "bg-green-500"
+                      : value.accent === "red"
+                        ? "bg-red-500"
+                        : "bg-yellow-400"
+                      }`}
                   >
                     <div className={value.accent === "yellow" ? "text-black" : "text-white"}>{value.icon}</div>
                   </div>
@@ -371,19 +362,16 @@ export default function AboutPage() {
         {/* Animated Background Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className={`absolute top-20 left-10 w-40 h-40 bg-green-500/3 rounded-full transition-all duration-1000 ${
-              isStoryVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-            }`}
+            className={`absolute top-20 left-10 w-40 h-40 bg-green-500/3 rounded-full transition-all duration-1000 ${isStoryVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
           ></div>
           <div
-            className={`absolute bottom-20 right-10 w-32 h-32 bg-red-500/3 rounded-full transition-all duration-1000 delay-300 ${
-              isStoryVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-            }`}
+            className={`absolute bottom-20 right-10 w-32 h-32 bg-red-500/3 rounded-full transition-all duration-1000 delay-300 ${isStoryVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
           ></div>
           <div
-            className={`absolute top-1/2 left-1/3 w-24 h-24 bg-yellow-400/3 rounded-full transition-all duration-1000 delay-500 ${
-              isStoryVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-            }`}
+            className={`absolute top-1/2 left-1/3 w-24 h-24 bg-yellow-400/3 rounded-full transition-all duration-1000 delay-500 ${isStoryVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
           ></div>
         </div>
 
@@ -393,18 +381,16 @@ export default function AboutPage() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <div
-                  className={`flex items-center space-x-3 transition-all duration-700 ${
-                    isStoryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                  }`}
+                  className={`flex items-center space-x-3 transition-all duration-700 ${isStoryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                    }`}
                 >
                   <div className="w-12 h-0.5 bg-black"></div>
                   <span className="text-sm font-light tracking-widest uppercase text-gray-600">Our Mission</span>
                 </div>
 
                 <div
-                  className={`transition-all duration-700 delay-200 ${
-                    isStoryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
+                  className={`transition-all duration-700 delay-200 ${isStoryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                    }`}
                 >
                   <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter text-black">
                     Creating Digital
@@ -412,24 +398,21 @@ export default function AboutPage() {
                       Experiences
                       {/* Animated underline */}
                       <div
-                        className={`absolute bottom-0 left-0 h-1 bg-green-500/20 transition-all duration-1000 delay-700 ${
-                          isStoryVisible ? "w-full" : "w-0"
-                        }`}
+                        className={`absolute bottom-0 left-0 h-1 bg-green-500/20 transition-all duration-1000 delay-700 ${isStoryVisible ? "w-full" : "w-0"
+                          }`}
                       ></div>
                     </span>
                   </h2>
                 </div>
                 <div
-                  className={`w-16 h-1 bg-green-500 transition-all duration-1000 delay-700 ${
-                    isStoryVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 transition-all duration-1000 delay-700 ${isStoryVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
               </div>
 
               <div
-                className={`space-y-6 text-base sm:text-lg font-light text-gray-700 leading-relaxed transition-all duration-700 delay-400 ${
-                  isStoryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`space-y-6 text-base sm:text-lg font-light text-gray-700 leading-relaxed transition-all duration-700 delay-400 ${isStoryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <p>
                   We believe in the power of authentic digital storytelling. Our mission is to bridge the gap between
@@ -447,9 +430,8 @@ export default function AboutPage() {
               </div>
 
               <div
-                className={`grid grid-cols-2 gap-6 pt-4 transition-all duration-700 delay-600 ${
-                  isStoryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`grid grid-cols-2 gap-6 pt-4 transition-all duration-700 delay-600 ${isStoryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <div className="space-y-3 group">
                   <div className="w-8 h-8 bg-red-500 rounded-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -471,9 +453,8 @@ export default function AboutPage() {
             {/* Right Side - Visual Element */}
             <div className="relative">
               <div
-                className={`transition-all duration-1000 ${
-                  isStoryVisible ? "opacity-100 scale-100" : "opacity-0 scale-75"
-                }`}
+                className={`transition-all duration-1000 ${isStoryVisible ? "opacity-100 scale-100" : "opacity-0 scale-75"
+                  }`}
               >
                 <div className="aspect-square bg-gray-50/50 rounded-sm relative overflow-hidden border border-gray-100">
                   <img
@@ -499,14 +480,12 @@ export default function AboutPage() {
 
         {/* Animated side accents */}
         <div
-          className={`absolute top-32 left-0 w-1 bg-green-500/40 transition-all duration-1000 delay-1000 ${
-            isStoryVisible ? "h-32 opacity-100" : "h-0 opacity-0"
-          }`}
+          className={`absolute top-32 left-0 w-1 bg-green-500/40 transition-all duration-1000 delay-1000 ${isStoryVisible ? "h-32 opacity-100" : "h-0 opacity-0"
+            }`}
         ></div>
         <div
-          className={`absolute bottom-32 right-0 w-1 bg-black/20 transition-all duration-1000 delay-1100 ${
-            isStoryVisible ? "h-32 opacity-100" : "h-0 opacity-0"
-          }`}
+          className={`absolute bottom-32 right-0 w-1 bg-black/20 transition-all duration-1000 delay-1100 ${isStoryVisible ? "h-32 opacity-100" : "h-0 opacity-0"
+            }`}
         ></div>
       </section>
 
@@ -516,9 +495,8 @@ export default function AboutPage() {
           <div className="space-y-12 sm:space-y-16">
             <div className="text-center space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isTeamVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isTeamVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-12 h-0.5 bg-black"></div>
                 <span className="text-sm font-light tracking-widest uppercase text-gray-600">Our Team</span>
@@ -526,18 +504,16 @@ export default function AboutPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isTeamVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isTeamVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter text-black">
                   Meet the
                   <span className="text-green-500"> Citizens</span>
                 </h2>
                 <div
-                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isTeamVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isTeamVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
                 <p className="text-lg font-light text-gray-700 max-w-2xl mx-auto mt-4">
                   A diverse group of creatives, strategists, and digital natives working together to push boundaries.
@@ -549,17 +525,15 @@ export default function AboutPage() {
               {teamMembers.map((member, index) => (
                 <div
                   key={index}
-                  className={`transition-all duration-700 ${
-                    isTeamVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-                  }`}
+                  className={`transition-all duration-700 ${isTeamVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                    }`}
                   style={{ transitionDelay: `${400 + index * 150}ms` }}
                 >
                   <Card className="border-0 shadow-none bg-gray-50/50 hover:shadow-lg transition-all duration-300 group relative overflow-hidden">
                     {/* Floating accent elements */}
                     <div
-                      className={`absolute top-4 right-4 w-3 h-3 rounded-full transition-all duration-500 group-hover:scale-125 ${
-                        member.accent === "green" ? "bg-green-500" : "bg-red-500"
-                      }`}
+                      className={`absolute top-4 right-4 w-3 h-3 rounded-full transition-all duration-500 group-hover:scale-125 ${member.accent === "green" ? "bg-green-500" : "bg-red-500"
+                        }`}
                     ></div>
 
                     <CardContent className="p-6 text-center space-y-6 relative">
@@ -575,9 +549,8 @@ export default function AboutPage() {
 
                         {/* Icon overlay */}
                         <div
-                          className={`absolute -bottom-2 -right-2 w-8 h-8 rounded-sm flex items-center justify-center transition-all duration-300 group-hover:scale-110 ${
-                            member.accent === "green" ? "bg-green-500" : "bg-red-500"
-                          }`}
+                          className={`absolute -bottom-2 -right-2 w-8 h-8 rounded-sm flex items-center justify-center transition-all duration-300 group-hover:scale-110 ${member.accent === "green" ? "bg-green-500" : "bg-red-500"
+                            }`}
                         >
                           <Mic className="h-4 w-4 text-white" />
                         </div>
@@ -598,9 +571,8 @@ export default function AboutPage() {
 
                         {/* Animated line */}
                         <div
-                          className={`mx-auto h-0.5 transition-all duration-500 group-hover:w-12 w-0 ${
-                            member.accent === "green" ? "bg-green-500" : "bg-red-500"
-                          }`}
+                          className={`mx-auto h-0.5 transition-all duration-500 group-hover:w-12 w-0 ${member.accent === "green" ? "bg-green-500" : "bg-red-500"
+                            }`}
                         ></div>
                       </div>
                     </CardContent>
@@ -618,9 +590,8 @@ export default function AboutPage() {
           <div className="space-y-12 sm:space-y-16">
             <div className="text-center space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isArticlesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isArticlesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-12 h-0.5 bg-black"></div>
                 <span className="text-sm font-light tracking-widest uppercase text-gray-600">Featured In</span>
@@ -628,17 +599,15 @@ export default function AboutPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isArticlesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isArticlesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter text-black">
                   Press &<span className="text-green-500"> Recognition</span>
                 </h2>
                 <div
-                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isArticlesVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isArticlesVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
                 <p className="text-lg font-light text-gray-700 max-w-2xl mx-auto mt-4">
                   Our story and impact have been featured in leading publications.
@@ -653,17 +622,15 @@ export default function AboutPage() {
                   href={article.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`group cursor-pointer transition-all duration-700 ${
-                    isArticlesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-                  }`}
+                  className={`group cursor-pointer transition-all duration-700 ${isArticlesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                    }`}
                   style={{ transitionDelay: `${400 + index * 200}ms` }}
                 >
                   <Card className="border-0 shadow-none bg-gray-50/50 hover:shadow-lg transition-all duration-300 group relative overflow-hidden">
                     {/* Floating accent elements */}
                     <div
-                      className={`absolute top-4 right-4 w-3 h-3 rounded-full transition-all duration-500 group-hover:scale-125 ${
-                        article.accent === "green" ? "bg-green-500" : "bg-red-500"
-                      }`}
+                      className={`absolute top-4 right-4 w-3 h-3 rounded-full transition-all duration-500 group-hover:scale-125 ${article.accent === "green" ? "bg-green-500" : "bg-red-500"
+                        }`}
                     ></div>
 
                     <CardContent className="p-0 relative">
@@ -681,9 +648,8 @@ export default function AboutPage() {
                         <div className="space-y-2">
                           <div className="flex items-center justify-between">
                             <span
-                              className={`text-xs font-medium tracking-wide uppercase ${
-                                article.accent === "green" ? "text-green-600" : "text-red-600"
-                              }`}
+                              className={`text-xs font-medium tracking-wide uppercase ${article.accent === "green" ? "text-green-600" : "text-red-600"
+                                }`}
                             >
                               {article.publication}
                             </span>
@@ -697,9 +663,8 @@ export default function AboutPage() {
 
                         {/* Animated line */}
                         <div
-                          className={`h-0.5 transition-all duration-500 group-hover:w-12 w-0 ${
-                            article.accent === "green" ? "bg-green-500" : "bg-red-500"
-                          }`}
+                          className={`h-0.5 transition-all duration-500 group-hover:w-12 w-0 ${article.accent === "green" ? "bg-green-500" : "bg-red-500"
+                            }`}
                         ></div>
                       </div>
                     </CardContent>

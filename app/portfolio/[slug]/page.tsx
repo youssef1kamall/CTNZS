@@ -436,9 +436,8 @@ export default function PortfolioDetailPage() {
 
           {/* Mobile Navigation */}
           <div
-            className={`md:hidden border-t border-gray-100 bg-white transition-all duration-300 ease-in-out overflow-hidden ${
-              mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-            }`}
+            className={`md:hidden border-t border-gray-100 bg-white transition-all duration-300 ease-in-out overflow-hidden ${mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+              }`}
           >
             <div className="px-4 py-6 space-y-4">
               <Link
@@ -492,14 +491,12 @@ export default function PortfolioDetailPage() {
         {/* Background Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className={`absolute top-20 right-16 w-32 h-32 bg-green-500/5 rounded-full transition-all duration-1000 ${
-              isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-            }`}
+            className={`absolute top-20 right-16 w-32 h-32 bg-green-500/5 rounded-full transition-all duration-1000 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
           ></div>
           <div
-            className={`absolute bottom-20 left-16 w-24 h-24 bg-red-500/5 rounded-full transition-all duration-1000 delay-300 ${
-              isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-            }`}
+            className={`absolute bottom-20 left-16 w-24 h-24 bg-red-500/5 rounded-full transition-all duration-1000 delay-300 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
           ></div>
         </div>
 
@@ -518,9 +515,8 @@ export default function PortfolioDetailPage() {
           <div className="text-center space-y-8 sm:space-y-12">
             <div className="space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-12 h-0.5 bg-black"></div>
                 <span className="text-sm font-light tracking-widest uppercase text-gray-600">
@@ -530,9 +526,8 @@ export default function PortfolioDetailPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter text-black leading-none">
                   {portfolioItem.title}
@@ -541,16 +536,14 @@ export default function PortfolioDetailPage() {
                   </span>
                 </h1>
                 <div
-                  className={`w-24 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-24 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
               </div>
 
               <div
-                className={`transition-all duration-700 delay-400 ${
-                  isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-400 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <p className="text-lg sm:text-xl font-light text-gray-700 max-w-3xl mx-auto leading-relaxed">
                   {portfolioItem.description}
@@ -561,9 +554,8 @@ export default function PortfolioDetailPage() {
 
           {/* Main Image */}
           <div
-            className={`mt-12 transition-all duration-1000 delay-600 ${
-              isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-            }`}
+            className={`mt-12 transition-all duration-1000 delay-600 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+              }`}
           >
             <div className="aspect-[16/9] rounded-sm overflow-hidden">
               <img
@@ -583,9 +575,8 @@ export default function PortfolioDetailPage() {
             {/* Project Info - Left Column */}
             <div className="lg:col-span-1">
               <div
-                className={`space-y-8 transition-all duration-700 ${
-                  isDetailsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`space-y-8 transition-all duration-700 ${isDetailsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <div>
                   <h3 className="text-lg font-semibold text-black mb-4">Project Details</h3>
@@ -634,9 +625,8 @@ export default function PortfolioDetailPage() {
             <div className="lg:col-span-2">
               <div className="space-y-8">
                 <div
-                  className={`space-y-6 transition-all duration-700 delay-200 ${
-                    isDetailsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
+                  className={`space-y-6 transition-all duration-700 delay-200 ${isDetailsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                    }`}
                 >
                   <div>
                     <h3 className="text-xl font-semibold text-black mb-3">Challenge</h3>
@@ -663,9 +653,8 @@ export default function PortfolioDetailPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center space-y-6 mb-12">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isGalleryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isGalleryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-8 sm:w-12 h-0.5 bg-black"></div>
                 <span className="text-xs sm:text-sm font-light tracking-widest uppercase text-gray-600">Gallery</span>
@@ -673,17 +662,15 @@ export default function PortfolioDetailPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isGalleryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isGalleryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h2 className="text-3xl sm:text-4xl font-black tracking-tighter text-black">
                   Project <span className="text-green-500">Showcase</span>
                 </h2>
                 <div
-                  className={`w-16 h-1 bg-green-500 mx-auto mt-4 transition-all duration-1000 delay-700 ${
-                    isGalleryVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 mx-auto mt-4 transition-all duration-1000 delay-700 ${isGalleryVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
               </div>
             </div>
@@ -692,9 +679,8 @@ export default function PortfolioDetailPage() {
               {portfolioItem.gallery.map((image, index) => (
                 <div
                   key={index}
-                  className={`transition-all duration-700 ${
-                    isGalleryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-                  }`}
+                  className={`transition-all duration-700 ${isGalleryVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                    }`}
                   style={{ transitionDelay: `${400 + index * 150}ms` }}
                 >
                   <div className="aspect-[4/3] rounded-sm hover:shadow-lg transition-all duration-300 group cursor-pointer relative overflow-hidden">

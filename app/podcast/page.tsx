@@ -248,7 +248,7 @@ export default function PodcastPage() {
               <img
                 src="/images/ctzns-logo.png"
                 alt="CTZNS - Citizens of the Internet"
-                className="h-8 sm:h-10 md:h-12 w-auto"
+                className="h-[60px] w-[100px] md:h-[78px] md:w-[129px] lg:h-[91px] lg:w-[151px] object-contain"
               />
             </Link>
 
@@ -256,31 +256,31 @@ export default function PodcastPage() {
             <div className="hidden md:flex items-center space-x-8">
               <Link
                 href="/about"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 About
               </Link>
               <Link
                 href="/services"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Services
               </Link>
               <Link
                 href="/portfolio"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Portfolio
               </Link>
               <Link
                 href="/podcast"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Podcast
               </Link>
               <Link
                 href="/products"
-                className="text-gray-500 hover:text-black transition-colors text-sm font-light tracking-wide uppercase"
+                className="text-gray-500 hover:text-black transition-colors text-[14px] md:text-[16px] lg:text-[18px] font-light tracking-wide uppercase"
               >
                 Products
               </Link>
@@ -305,9 +305,8 @@ export default function PodcastPage() {
 
           {/* Mobile Navigation */}
           <div
-            className={`md:hidden border-t border-gray-100 bg-white transition-all duration-300 ease-in-out overflow-hidden ${
-              mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-            }`}
+            className={`md:hidden border-t border-gray-100 bg-white transition-all duration-300 ease-in-out overflow-hidden ${mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+              }`}
           >
             <div className="px-4 py-6 space-y-4">
               <Link
@@ -361,14 +360,12 @@ export default function PodcastPage() {
         {/* Background Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className={`absolute top-20 right-16 w-32 h-32 bg-green-500/5 rounded-full transition-all duration-1000 ${
-              isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-            }`}
+            className={`absolute top-20 right-16 w-32 h-32 bg-green-500/5 rounded-full transition-all duration-1000 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
           ></div>
           <div
-            className={`absolute bottom-20 left-16 w-24 h-24 bg-red-500/5 rounded-full transition-all duration-1000 delay-300 ${
-              isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-            }`}
+            className={`absolute bottom-20 left-16 w-24 h-24 bg-red-500/5 rounded-full transition-all duration-1000 delay-300 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+              }`}
           ></div>
         </div>
 
@@ -378,18 +375,16 @@ export default function PodcastPage() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <div
-                  className={`flex items-center space-x-3 transition-all duration-700 ${
-                    isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                  }`}
+                  className={`flex items-center space-x-3 transition-all duration-700 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                    }`}
                 >
                   <div className="w-12 h-0.5 bg-black"></div>
                   <span className="text-sm font-light tracking-widest uppercase text-gray-600">Podcast</span>
                 </div>
 
                 <div
-                  className={`transition-all duration-700 delay-200 ${
-                    isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
+                  className={`transition-all duration-700 delay-200 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                    }`}
                 >
                   <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter text-black leading-none">
                     DIGITAL
@@ -397,23 +392,20 @@ export default function PodcastPage() {
                       DISCOURSE
                       {/* Animated underline */}
                       <div
-                        className={`absolute bottom-0 left-0 h-1 bg-green-500/20 transition-all duration-1000 delay-700 ${
-                          isHeroVisible ? "w-full" : "w-0"
-                        }`}
+                        className={`absolute bottom-0 left-0 h-1 bg-green-500/20 transition-all duration-1000 delay-700 ${isHeroVisible ? "w-full" : "w-0"
+                          }`}
                       ></div>
                     </span>
                   </h1>
                 </div>
                 <div
-                  className={`w-16 h-1 bg-green-500 transition-all duration-1000 delay-700 ${
-                    isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 transition-all duration-1000 delay-700 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
 
                 <div
-                  className={`transition-all duration-700 delay-400 ${
-                    isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                  }`}
+                  className={`transition-all duration-700 delay-400 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                    }`}
                 >
                   <p className="text-lg sm:text-xl font-light text-gray-700 leading-relaxed">
                     Conversations about digital culture, creativity, and the future of content creation. Join us as we
@@ -423,9 +415,8 @@ export default function PodcastPage() {
               </div>
 
               <div
-                className={`flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-600 ${
-                  isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-600 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <Button size="lg" className="bg-green-500 hover:bg-green-600 text-black font-medium tracking-wide">
                   <Play className="mr-2 h-4 w-4" />
@@ -443,9 +434,8 @@ export default function PodcastPage() {
 
               {/* Podcast Stats */}
               <div
-                className={`grid grid-cols-3 gap-6 pt-8 transition-all duration-700 delay-800 ${
-                  isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`grid grid-cols-3 gap-6 pt-8 transition-all duration-700 delay-800 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <div className="text-center space-y-2">
                   <div className="text-2xl sm:text-3xl font-black text-green-500">25+</div>
@@ -464,9 +454,8 @@ export default function PodcastPage() {
 
             {/* Right Side - Featured Episode */}
             <div
-              className={`transition-all duration-1000 ${
-                isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-75"
-              }`}
+              className={`transition-all duration-1000 ${isHeroVisible ? "opacity-100 scale-100" : "opacity-0 scale-75"
+                }`}
             >
               <Card className="border-0 shadow-lg bg-gray-50/50 relative overflow-hidden">
                 <div className="absolute top-4 right-4">
@@ -522,9 +511,8 @@ export default function PodcastPage() {
           <div className="space-y-12 sm:space-y-16">
             <div className="text-center space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isEpisodesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isEpisodesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-12 h-0.5 bg-black"></div>
                 <span className="text-sm font-light tracking-widest uppercase text-gray-600">Episodes</span>
@@ -532,18 +520,16 @@ export default function PodcastPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isEpisodesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isEpisodesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter text-black">
                   Recent
                   <span className="text-green-500"> Episodes</span>
                 </h2>
                 <div
-                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isEpisodesVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isEpisodesVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
                 <p className="text-lg font-light text-gray-700 max-w-2xl mx-auto mt-4">
                   Deep dives into digital culture, creativity, and the stories behind the content.
@@ -555,9 +541,8 @@ export default function PodcastPage() {
               {episodes.map((episode, index) => (
                 <div
                   key={index}
-                  className={`transition-all duration-700 ${
-                    isEpisodesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-                  }`}
+                  className={`transition-all duration-700 ${isEpisodesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                    }`}
                   style={{ transitionDelay: `${400 + index * 150}ms` }}
                 >
                   <Card className="border-0 shadow-none bg-gray-50/50 hover:shadow-lg transition-all duration-300 group relative overflow-hidden cursor-pointer">
@@ -569,13 +554,12 @@ export default function PodcastPage() {
 
                     {/* Floating accent elements */}
                     <div
-                      className={`absolute top-4 left-4 w-3 h-3 rounded-full transition-all duration-500 group-hover:scale-125 ${
-                        episode.accent === "green"
-                          ? "bg-green-500"
-                          : episode.accent === "red"
-                            ? "bg-red-500"
-                            : "bg-yellow-400"
-                      }`}
+                      className={`absolute top-4 left-4 w-3 h-3 rounded-full transition-all duration-500 group-hover:scale-125 ${episode.accent === "green"
+                        ? "bg-green-500"
+                        : episode.accent === "red"
+                          ? "bg-red-500"
+                          : "bg-yellow-400"
+                        }`}
                     ></div>
 
                     <CardContent className="p-0 relative">
@@ -589,13 +573,12 @@ export default function PodcastPage() {
                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                           <div
-                            className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
-                              episode.accent === "green"
-                                ? "bg-green-500"
-                                : episode.accent === "red"
-                                  ? "bg-red-500"
-                                  : "bg-yellow-400"
-                            }`}
+                            className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${episode.accent === "green"
+                              ? "bg-green-500"
+                              : episode.accent === "red"
+                                ? "bg-red-500"
+                                : "bg-yellow-400"
+                              }`}
                           >
                             <Play
                               className={`h-6 w-6 ml-1 ${episode.accent === "yellow" ? "text-black" : "text-white"}`}
@@ -627,13 +610,12 @@ export default function PodcastPage() {
 
                         {/* Animated line */}
                         <div
-                          className={`h-0.5 transition-all duration-500 group-hover:w-12 w-0 ${
-                            episode.accent === "green"
-                              ? "bg-green-500"
-                              : episode.accent === "red"
-                                ? "bg-red-500"
-                                : "bg-yellow-400"
-                          }`}
+                          className={`h-0.5 transition-all duration-500 group-hover:w-12 w-0 ${episode.accent === "green"
+                            ? "bg-green-500"
+                            : episode.accent === "red"
+                              ? "bg-red-500"
+                              : "bg-yellow-400"
+                            }`}
                         ></div>
                       </div>
                     </CardContent>
@@ -643,9 +625,8 @@ export default function PodcastPage() {
             </div>
 
             <div
-              className={`text-center transition-all duration-700 delay-800 ${
-                isEpisodesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
+              className={`text-center transition-all duration-700 delay-800 ${isEpisodesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                }`}
             >
               <Button
                 size="lg"
@@ -666,9 +647,8 @@ export default function PodcastPage() {
           <div className="space-y-12 sm:space-y-16">
             <div className="text-center space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isHostsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isHostsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-12 h-0.5 bg-black"></div>
                 <span className="text-sm font-light tracking-widest uppercase text-gray-600">Hosts</span>
@@ -676,18 +656,16 @@ export default function PodcastPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isHostsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isHostsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter text-black">
                   Meet Your
                   <span className="text-green-500"> Hosts</span>
                 </h2>
                 <div
-                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isHostsVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isHostsVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
                 <p className="text-lg font-light text-gray-700 max-w-2xl mx-auto mt-4">
                   The voices behind Digital Discourse, bringing you insights from the world of digital creativity.
@@ -699,17 +677,15 @@ export default function PodcastPage() {
               {hosts.map((host, index) => (
                 <div
                   key={index}
-                  className={`transition-all duration-700 ${
-                    isHostsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-                  }`}
+                  className={`transition-all duration-700 ${isHostsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                    }`}
                   style={{ transitionDelay: `${400 + index * 200}ms` }}
                 >
                   <Card className="border-0 shadow-none bg-gray-50/50 hover:shadow-lg transition-all duration-300 group relative overflow-hidden">
                     {/* Floating accent elements */}
                     <div
-                      className={`absolute top-4 right-4 w-3 h-3 rounded-full transition-all duration-500 group-hover:scale-125 ${
-                        host.accent === "green" ? "bg-green-500" : "bg-red-500"
-                      }`}
+                      className={`absolute top-4 right-4 w-3 h-3 rounded-full transition-all duration-500 group-hover:scale-125 ${host.accent === "green" ? "bg-green-500" : "bg-red-500"
+                        }`}
                     ></div>
 
                     <CardContent className="p-8 text-center space-y-6 relative">
@@ -725,9 +701,8 @@ export default function PodcastPage() {
 
                         {/* Icon overlay */}
                         <div
-                          className={`absolute -bottom-2 -right-2 w-8 h-8 rounded-sm flex items-center justify-center transition-all duration-300 group-hover:scale-110 ${
-                            host.accent === "green" ? "bg-green-500" : "bg-red-500"
-                          }`}
+                          className={`absolute -bottom-2 -right-2 w-8 h-8 rounded-sm flex items-center justify-center transition-all duration-300 group-hover:scale-110 ${host.accent === "green" ? "bg-green-500" : "bg-red-500"
+                            }`}
                         >
                           <Mic className="h-4 w-4 text-white" />
                         </div>
@@ -745,9 +720,8 @@ export default function PodcastPage() {
 
                         {/* Animated line */}
                         <div
-                          className={`mx-auto h-0.5 transition-all duration-500 group-hover:w-12 w-0 ${
-                            host.accent === "green" ? "bg-green-500" : "bg-red-500"
-                          }`}
+                          className={`mx-auto h-0.5 transition-all duration-500 group-hover:w-12 w-0 ${host.accent === "green" ? "bg-green-500" : "bg-red-500"
+                            }`}
                         ></div>
                       </div>
                     </CardContent>
@@ -765,9 +739,8 @@ export default function PodcastPage() {
           <div className="space-y-12 sm:space-y-16">
             <div className="text-center space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isGuestVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isGuestVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-12 h-0.5 bg-black"></div>
                 <span className="text-sm font-light tracking-widest uppercase text-gray-600">Guests</span>
@@ -775,18 +748,16 @@ export default function PodcastPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isGuestVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isGuestVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter text-black">
                   Who We're
                   <span className="text-green-500"> Looking For</span>
                 </h2>
                 <div
-                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isGuestVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isGuestVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
                 <p className="text-lg font-light text-gray-700 max-w-2xl mx-auto mt-4">
                   We're seeking passionate individuals with unique stories and insights to share.
@@ -798,21 +769,19 @@ export default function PodcastPage() {
               {idealGuests.map((guest, index) => (
                 <div
                   key={index}
-                  className={`transition-all duration-700 ${
-                    isGuestVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-                  }`}
+                  className={`transition-all duration-700 ${isGuestVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                    }`}
                   style={{ transitionDelay: `${400 + index * 150}ms` }}
                 >
                   <div className="bg-gray-50/50 p-6 rounded-sm hover:bg-gray-50 transition-all duration-300 group cursor-pointer relative overflow-hidden h-full">
                     <div className="space-y-4">
                       <div
-                        className={`w-10 h-10 rounded-sm flex items-center justify-center transition-all duration-300 group-hover:scale-110 ${
-                          guest.accent === "green"
-                            ? "bg-green-500"
-                            : guest.accent === "red"
-                              ? "bg-red-500"
-                              : "bg-yellow-400"
-                        }`}
+                        className={`w-10 h-10 rounded-sm flex items-center justify-center transition-all duration-300 group-hover:scale-110 ${guest.accent === "green"
+                          ? "bg-green-500"
+                          : guest.accent === "red"
+                            ? "bg-red-500"
+                            : "bg-yellow-400"
+                          }`}
                       >
                         {guest.icon}
                       </div>
@@ -831,9 +800,8 @@ export default function PodcastPage() {
 
             {/* Guest Benefits */}
             <div
-              className={`bg-gray-50/50 p-8 sm:p-12 rounded-sm transition-all duration-700 delay-600 ${
-                isGuestVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
+              className={`bg-gray-50/50 p-8 sm:p-12 rounded-sm transition-all duration-700 delay-600 ${isGuestVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                }`}
             >
               <div className="text-center space-y-6">
                 <h3 className="text-2xl sm:text-3xl font-bold text-black tracking-wide">Why Be a Guest?</h3>
@@ -864,9 +832,8 @@ export default function PodcastPage() {
           <div className="space-y-12">
             <div className="text-center space-y-6">
               <div
-                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${
-                  isFormVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                }`}
+                className={`flex items-center justify-center space-x-3 transition-all duration-700 ${isFormVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                  }`}
               >
                 <div className="w-12 h-0.5 bg-black"></div>
                 <span className="text-sm font-light tracking-widest uppercase text-gray-600">Apply</span>
@@ -874,18 +841,16 @@ export default function PodcastPage() {
               </div>
 
               <div
-                className={`transition-all duration-700 delay-200 ${
-                  isFormVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
+                className={`transition-all duration-700 delay-200 ${isFormVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                  }`}
               >
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter text-black">
                   Join the
                   <span className="text-green-500"> Conversation</span>
                 </h2>
                 <div
-                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${
-                    isFormVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
-                  }`}
+                  className={`w-16 h-1 bg-green-500 mx-auto mt-6 transition-all duration-1000 delay-700 ${isFormVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+                    }`}
                 ></div>
                 <p className="text-lg font-light text-gray-700 max-w-2xl mx-auto mt-4">
                   Ready to share your story? Fill out the form below and we'll get back to you soon.
@@ -894,9 +859,8 @@ export default function PodcastPage() {
             </div>
 
             <div
-              className={`transition-all duration-700 delay-400 ${
-                isFormVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
+              className={`transition-all duration-700 delay-400 ${isFormVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                }`}
             >
               <Card className="border-0 shadow-lg bg-gray-50/50">
                 <CardContent className="p-8 sm:p-12">
@@ -1114,7 +1078,7 @@ export default function PodcastPage() {
               <img
                 src="/images/ctzns-logo.png"
                 alt="CTZNS - Citizens of the Internet"
-                className="h-8 sm:h-10 md:h-12 w-auto mx-auto md:mx-0"
+                className="h-[60px] w-[100px] md:h-[78px] md:w-[129px] lg:h-[91px] lg:w-[151px] object-contain mx-auto md:mx-0"
               />
             </Link>
 
