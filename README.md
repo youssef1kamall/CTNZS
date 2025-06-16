@@ -1,6 +1,6 @@
 
 CTZNS Landing Page
-A sleek, modern, and fully responsive landing page built with Next.js 15 and Tailwind CSS, designed to showcase your portfolio, services, products, and media content with an exceptional user experience. View the Figma design.  -->  https://www.figma.com/design/FrDQukXubtkpSKZRleFQUj/CTNZS-Mockup?node-id=0-1&p=f&t=EbpeRQFp1D9cvJSv-0
+A sleek, modern, and fully responsive landing page built with Next.js 15 and Tailwind CSS, designed to showcase your portfolio, services, products, and media content with an exceptional user experience. View the Figma design.  --> 
 
 ✨ Features
 Responsive Design: Optimized for desktops, tablets, and mobile devices.
